@@ -1,0 +1,202 @@
+<meta charset="utf-8">
+<title>生涯学習新聞 — 記事検索・コラム一覧</title>
+<meta name="description" content="生涯学習新聞のバックナンバーを横断して記事を検索。編集長コラムの連載一覧も掲載。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="生涯学習新聞">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="生涯学習新聞 — 記事検索・コラム一覧">
+<meta property="og:description" content="生涯学習新聞のバックナンバーを横断して記事を検索。編集長コラムの連載一覧も掲載。">
+<meta property="og:url" content="https://djtobby.github.io/shogai-gakushu-shimbun/archive.html">
+<meta property="og:image" content="https://djtobby.github.io/shogai-gakushu-shimbun/og/2026-08-05.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="生涯学習新聞 — 記事検索・コラム一覧">
+<meta name="twitter:description" content="生涯学習新聞のバックナンバーを横断して記事を検索。編集長コラムの連載一覧も掲載。">
+<meta name="twitter:image" content="https://djtobby.github.io/shogai-gakushu-shimbun/og/2026-08-05.png">
+<link rel="icon" href="icons/favicon.ico">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ece9e0">
+<meta name="apple-mobile-web-app-title" content="生涯学習新聞">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<style>
+  :root {
+    --paper: #ece9e0; --ink: #1a1a1a; --ink-soft: #4a473e;
+    --rule: #1a1a1a; --rule-soft: #8a8677; --shu: #b7301f; --link: #33445e;
+    --font-mincho: "Hiragino Mincho ProN", "YuMincho", "Yu Mincho", "Noto Serif JP", "Times New Roman", serif;
+    --font-gothic: "Hiragino Kaku Gothic ProN", "YuGothic", "Yu Gothic", "Noto Sans JP", "Helvetica Neue", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #17181a; --ink: #e7e4d9; --ink-soft: #b0ad9f; --rule: #cfccc0; --rule-soft: #55534a; --shu: #e07a63; --link: #9db2d6; }
+  }
+  :root[data-theme="dark"] { --paper: #17181a; --ink: #e7e4d9; --ink-soft: #b0ad9f; --rule: #cfccc0; --rule-soft: #55534a; --shu: #e07a63; --link: #9db2d6; }
+  :root[data-theme="light"] { --paper: #ece9e0; --ink: #1a1a1a; --ink-soft: #4a473e; --rule: #1a1a1a; --rule-soft: #8a8677; --shu: #b7301f; --link: #33445e; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-gothic); }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 2.4rem 1.2rem 4rem; }
+  .masthead { text-align: center; margin-bottom: 0.6rem; }
+  .masthead .emblem { display: flex; justify-content: center; margin-bottom: 0.4rem; }
+  .masthead .emblem svg { width: 30px; height: 30px; overflow: visible; fill: none; stroke: var(--ink-soft); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .masthead h1 { font-family: var(--font-mincho); font-weight: 700; font-size: clamp(2.2rem, 6vw, 3rem); letter-spacing: 0.1em; margin: 0; }
+  .masthead .sub { font-size: 0.64rem; letter-spacing: 0.3em; color: var(--ink-soft); text-transform: uppercase; margin-top: 0.3em; }
+  .rule { border-top: 4px solid var(--rule); border-bottom: 1px solid var(--rule); height: 6px; margin: 0.9rem 0 1.6rem; }
+  .backlink { font-size: 0.8rem; margin-bottom: 1.2rem; }
+  h2 { font-family: var(--font-mincho); font-size: 1.05rem; border-bottom: 3px double var(--ink); padding-bottom: 0.3em; margin: 2.2rem 0 1.2rem; }
+  h2:first-of-type { margin-top: 0; }
+  .lede { font-size: 0.86rem; color: var(--ink-soft); line-height: 1.8; margin: -0.6rem 0 1.2rem; }
+
+  /* コラム連載 */
+  .col-list { list-style: none; margin: 0; padding: 0; }
+  .col-item { display: block; text-decoration: none; color: inherit; border: 1px solid var(--rule-soft); padding: 0.9rem 1.1rem; margin-bottom: 0.8rem; transition: border-color 0.15s; }
+  .col-item:hover { border-color: var(--ink); }
+  .col-item .col-no { font-size: 0.66rem; color: var(--shu); letter-spacing: 0.05em; font-weight: 700; }
+  .col-item .col-title { font-family: var(--font-mincho); font-weight: 700; font-size: 1rem; margin: 0.25em 0; }
+  .col-item .col-meta { font-size: 0.74rem; color: var(--ink-soft); }
+
+  /* 検索 */
+  .search-box { border: 1px solid var(--rule-soft); padding: 1.1rem 1.3rem; margin-bottom: 1.4rem; }
+  .search-box input[type="search"] {
+    width: 100%; font-size: 1rem; font-family: var(--font-gothic); color: var(--ink);
+    background: transparent; border: none; border-bottom: 2px solid var(--ink); padding: 0.4em 0.1em; outline: none;
+  }
+  .filter-row { display: flex; flex-wrap: wrap; gap: 0.5em; margin-top: 0.9em; }
+  .tag-chip {
+    font-size: 0.72rem; letter-spacing: 0.03em; padding: 0.3em 0.8em; border: 1px solid var(--rule-soft);
+    background: transparent; color: var(--ink-soft); cursor: pointer; border-radius: 999px; font-family: var(--font-gothic);
+  }
+  .tag-chip.active { border-color: var(--shu); color: var(--shu); }
+  .result-count { font-size: 0.76rem; color: var(--ink-soft); margin: 0.6em 0 1em; }
+  .result-list { list-style: none; margin: 0; padding: 0; }
+  .result-item { display: block; text-decoration: none; color: inherit; border-bottom: 1px solid var(--rule-soft); padding: 0.95rem 0.1rem; }
+  .result-item:last-child { border-bottom: none; }
+  .result-top { display: flex; gap: 0.6em; align-items: baseline; flex-wrap: wrap; font-size: 0.7rem; color: var(--ink-soft); }
+  .result-top .r-badge { border: 1px solid var(--rule-soft); padding: 0.05em 0.5em; }
+  .result-title { font-family: var(--font-mincho); font-weight: 700; font-size: 1.02rem; margin: 0.3em 0; }
+  .result-lead { font-size: 0.85rem; line-height: 1.7; color: var(--ink-soft); }
+  .no-result { font-size: 0.86rem; color: var(--ink-soft); padding: 1.5rem 0; text-align: center; }
+  footer { margin-top: 2.4rem; font-size: 0.72rem; color: var(--ink-soft); border-top: 1px solid var(--rule-soft); padding-top: 0.8em; }
+</style>
+
+<div class="wrap">
+  <div class="masthead">
+    <div class="emblem">
+      <svg viewBox="0 0 100 100">
+        <path d="M50,40 C40,32 26,30 16,32 L16,74 C26,72 40,74 50,82" />
+        <path d="M50,40 C60,32 74,30 84,32 L84,74 C74,72 60,74 50,82" />
+        <line x1="50" y1="40" x2="50" y2="82" />
+        <circle cx="50" cy="17" r="6" />
+        <line x1="50" y1="25" x2="50" y2="33" />
+      </svg>
+    </div>
+    <h1>生涯学習新聞</h1>
+    <p class="sub">SHOGAI GAKUSHU SHIMBUN — 記事検索・コラム一覧</p>
+  </div>
+  <div class="rule"></div>
+  <p class="backlink"><a href="backnumbers.html">← バックナンバー一覧に戻る</a></p>
+
+  <h2>編集長コラム 連載一覧</h2>
+  <p class="lede">編集長が毎号綴る所感欄です。連載「学びの周辺」に加え、号外的に掲載したコラムもあわせて収録しています。</p>
+  <ul class="col-list" id="column-list"></ul>
+
+  <h2>記事を検索</h2>
+  <p class="lede">これまでの号に掲載した記事を、キーワードやタグで横断的に探せます。</p>
+  <div class="search-box">
+    <input type="search" id="search-input" placeholder="キーワードで検索（例：公民館、図書館、リカレント）">
+    <div class="filter-row" id="tag-filters"></div>
+  </div>
+  <p class="result-count" id="result-count"></p>
+  <ul class="result-list" id="result-list"></ul>
+
+  <footer>生涯学習新聞は、一般財団法人日本生涯学習協議会の理事長である山仲元が個人として試作しているデジタル新聞です。協議会の公式刊行物ではありません。各記事の内容は公開情報を編集部が要約・構成したものです。本ページのデータは各号を発行するたびに手動で更新しています。</footer>
+</div>
+
+<script>
+  const articles = [{"issueDate":"2026-08-05","issueLabel":"創刊第1号","id":"front-lead-shakaikyoiku","articleType":"NEWS","title":"社会教育の在り方、中教審の審議が大詰めへ","subtitle":"特別部会が意見整理を公表、社会教育士の養成も論点に","lead":"中央教育審議会生涯学習分科会の下に置かれた「社会教育の在り方に関する特別部会」の審議が大詰めを迎えている。文部科学省は令和8年5月22日、同部会の「審議事項2に関する意見の整理」を公表した。","category":"総合","tags":["政策","中央教育審議会","社会教育"],"publishedAt":"2026-08-05T07:00:00+09:00"},{"issueDate":"2026-08-05","issueLabel":"創刊第1号","id":"col-chief-editor-001","articleType":"CHIEF_EDITOR","title":"創刊にあたって——学びは誰のものか","subtitle":"編集長コラム「学びの周辺」第1回","lead":"本日、生涯学習新聞を創刊します。制度が整うほどに、学びは「提供されるもの」の顔をし始める——その循環をどう取り戻すかを考えます。","category":"コラム","tags":["編集長コラム","創刊","生涯学習"],"publishedAt":"2026-08-05T10:00:00+09:00"},{"issueDate":"2026-08-05","issueLabel":"創刊第1号","id":"editorial-001","articleType":"EDITORIAL","title":"社会教育士という称号は、何を変えるのか","subtitle":"編集部はこう見る","lead":"中教審の特別部会と並行して、社会教育主事・社会教育士の養成に関するワーキング・グループの審議が続いている。2020年に創設された称号は、地域に何をもたらしうるのか。","category":"論説","tags":["論説","社会教育士","担い手"],"publishedAt":"2026-08-05T10:15:00+09:00"},{"issueDate":"2026-08-05","issueLabel":"創刊第1号","id":"feature-001","articleType":"FEATURE","title":"図書館は「読む」だけの場所ではなくなる——文科省報告書が描く次の図書館像","subtitle":"今週の特集","lead":"文部科学省が令和8年3月17日に公表した「図書館が拓く未来の学びと地域社会（報告書）」は、公共図書館に「読む」×「集う」×「学ぶ」の掛け算による地域共創を求めた。","category":"特集","tags":["特集","図書館","地域共創"],"publishedAt":"2026-08-05T10:30:00+09:00"},{"issueDate":"2026-08-05","issueLabel":"創刊第1号","id":"policy-001","articleType":"MARKET","title":"社会教育士、養成のワーキング・グループが審議継続","subtitle":null,"lead":"「社会教育主事・社会教育士養成等の改善・充実に関するワーキング・グループ」は令和8年7月3日に第7回の議事録が公表された。2020年創設の称号は地域に定着するか。","category":"公民館・社会教育","tags":["社会教育士","担い手","制度"],"publishedAt":"2026-08-05T10:45:00+09:00"},{"issueDate":"2026-08-05","issueLabel":"創刊第1号","id":"recurrent-001","articleType":"BUSINESS","title":"「リカレント教育エコシステム構築支援事業」とは何か","subtitle":null,"lead":"2025年7月18日、令和7年度から始動する「リカレント教育エコシステム構築支援事業」が発表された。大学ならではの「深い学び」を通じたキャリアアップ支援の枠組みである。","category":"リカレント・大学","tags":["リカレント教育","大学","政策"],"publishedAt":"2026-08-05T08:30:00+09:00"},{"issueDate":"2026-08-05","issueLabel":"創刊第1号","id":"recurrent-002","articleType":"MARKET","title":"通信制大学の在学者、約8割が社会人","subtitle":null,"lead":"通信制大学の在学者のうち、およそ80％を社会人が占めるとされる。初年度納付金は平均20万円台とされ、費用面のハードルの低さが働きながら学ぶ層の受け皿になっている。","category":"リカレント・大学","tags":["リカレント教育","通信制大学","社会人"],"publishedAt":"2026-08-05T08:00:00+09:00"},{"issueDate":"2026-08-05","issueLabel":"創刊第1号","id":"culture-001","articleType":"CULTURE","title":"博物館という装置は、何を引き受けてきたか","subtitle":null,"lead":"「望ましい基準」の全部改正でデジタルアーカイブの作成が努力義務として書き込まれた。保存と公開という博物館の二面性を、あらためて考える。","category":"博物館・文化","tags":["博物館","デジタルアーカイブ","文化"],"publishedAt":"2026-08-05T11:00:00+09:00"}];
+
+  function issueUrl(a) {
+    return 'issues/' + a.issueDate + '.html?goto=' + encodeURIComponent(a.id);
+  }
+
+  function formatDate(issueDate) {
+    const [y, m, d] = issueDate.split('-');
+    return y + '年' + parseInt(m, 10) + '月' + parseInt(d, 10) + '日';
+  }
+
+  const typeLabel = {
+    NEWS: 'NEWS', CHIEF_EDITOR: 'コラム', EDITORIAL: '論説', FEATURE: '特集',
+    MARKET: '動向', BUSINESS: '事業・制度', CULTURE: '文化',
+  };
+
+  /* ===== 編集長コラム 連載一覧 ===== */
+  function renderColumnSeries() {
+    const columns = articles
+      .filter((a) => a.articleType === 'CHIEF_EDITOR')
+      .sort((a, b) => a.publishedAt.localeCompare(b.publishedAt));
+    const list = document.getElementById('column-list');
+    list.innerHTML = columns.map((a) => {
+      const seriesMatch = (a.subtitle || '').match(/第(\d+)回/);
+      const noLabel = seriesMatch ? '連載 第' + seriesMatch[1] + '回' : '号外コラム';
+      return (
+        '<li><a class="col-item" href="' + issueUrl(a) + '">' +
+        '<div class="col-no">' + noLabel + '</div>' +
+        '<div class="col-title">' + a.title + '</div>' +
+        '<div class="col-meta">' + formatDate(a.issueDate) + '（' + a.issueLabel + '）</div>' +
+        '</a></li>'
+      );
+    }).join('');
+  }
+
+  /* ===== 記事検索 ===== */
+  const allTags = Array.from(new Set(articles.flatMap((a) => a.tags))).sort();
+  let activeTag = null;
+
+  function renderTagFilters() {
+    const box = document.getElementById('tag-filters');
+    box.innerHTML = allTags.map((t) =>
+      '<button type="button" class="tag-chip" data-tag="' + t + '">' + t + '</button>'
+    ).join('');
+    box.querySelectorAll('.tag-chip').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        activeTag = activeTag === btn.dataset.tag ? null : btn.dataset.tag;
+        renderTagFilters();
+        renderResults();
+      });
+      if (btn.dataset.tag === activeTag) btn.classList.add('active');
+    });
+  }
+
+  function renderResults() {
+    const q = document.getElementById('search-input').value.trim().toLowerCase();
+    const filtered = articles.filter((a) => {
+      const matchesTag = !activeTag || a.tags.includes(activeTag);
+      if (!matchesTag) return false;
+      if (!q) return true;
+      const haystack = [a.title, a.lead, a.category, a.subtitle, ...a.tags].filter(Boolean).join(' ').toLowerCase();
+      return haystack.includes(q);
+    }).sort((a, b) => b.issueDate.localeCompare(a.issueDate));
+
+    const list = document.getElementById('result-list');
+    if (filtered.length === 0) {
+      document.getElementById('result-count').textContent = '該当する記事が見つかりませんでした。';
+      list.innerHTML = '';
+      return;
+    }
+    document.getElementById('result-count').textContent = filtered.length + '件の記事';
+    list.innerHTML = filtered.map((a) => (
+      '<li><a class="result-item" href="' + issueUrl(a) + '">' +
+      '<div class="result-top"><span class="r-badge">' + (typeLabel[a.articleType] || a.articleType) + '</span>' +
+      '<span>' + formatDate(a.issueDate) + '（' + a.issueLabel + '）</span>' +
+      '<span>' + a.category + '</span></div>' +
+      '<div class="result-title">' + a.title + '</div>' +
+      '<div class="result-lead">' + (a.lead || '') + '</div>' +
+      '</a></li>'
+    )).join('');
+  }
+
+  document.getElementById('search-input').addEventListener('input', renderResults);
+
+  renderColumnSeries();
+  renderTagFilters();
+  renderResults();
+</script>

@@ -1,0 +1,130 @@
+<meta charset="utf-8">
+<title>生涯学習新聞 — 学ぶ・つながる・生きる</title>
+<meta name="description" content="生涯学習の政策・制度、公民館などの社会教育の現場、リカレント教育、シニアの学び、図書館・博物館の動向を届ける生涯学習新聞。">
+<link rel="alternate" type="application/rss+xml" title="生涯学習新聞 RSS" href="https://djtobby.github.io/shogai-gakushu-shimbun/feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="生涯学習新聞">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="生涯学習新聞 — 学ぶ・つながる・生きる">
+<meta property="og:description" content="生涯学習の政策・制度、公民館などの社会教育の現場、リカレント教育、シニアの学び、図書館・博物館の動向を届ける生涯学習新聞。">
+<meta property="og:url" content="https://djtobby.github.io/shogai-gakushu-shimbun/">
+<meta property="og:image" content="https://djtobby.github.io/shogai-gakushu-shimbun/og/2026-08-05.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="生涯学習新聞 — 学ぶ・つながる・生きる">
+<meta name="twitter:description" content="生涯学習の政策・制度、公民館などの社会教育の現場、リカレント教育、シニアの学び、図書館・博物館の動向を届ける生涯学習新聞。">
+<meta name="twitter:image" content="https://djtobby.github.io/shogai-gakushu-shimbun/og/2026-08-05.png">
+<link rel="icon" href="icons/favicon.ico">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ece9e0">
+<meta name="apple-mobile-web-app-title" content="生涯学習新聞">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<style>
+  :root {
+    --paper: #ece9e0; --ink: #1a1a1a; --ink-soft: #4a473e;
+    --rule: #1a1a1a; --rule-soft: #8a8677; --shu: #b7301f; --link: #33445e;
+    --font-mincho: "Hiragino Mincho ProN", "YuMincho", "Yu Mincho", "Noto Serif JP", "Times New Roman", serif;
+    --font-gothic: "Hiragino Kaku Gothic ProN", "YuGothic", "Yu Gothic", "Noto Sans JP", "Helvetica Neue", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #17181a; --ink: #e7e4d9; --ink-soft: #b0ad9f; --rule: #cfccc0; --rule-soft: #55534a; --shu: #e07a63; --link: #9db2d6; }
+  }
+  :root[data-theme="dark"] { --paper: #17181a; --ink: #e7e4d9; --ink-soft: #b0ad9f; --rule: #cfccc0; --rule-soft: #55534a; --shu: #e07a63; --link: #9db2d6; }
+  :root[data-theme="light"] { --paper: #ece9e0; --ink: #1a1a1a; --ink-soft: #4a473e; --rule: #1a1a1a; --rule-soft: #8a8677; --shu: #b7301f; --link: #33445e; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-gothic); }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 2.4rem 1.2rem 4rem; }
+  .masthead { text-align: center; margin-bottom: 0.6rem; }
+  .masthead .emblem { display: flex; justify-content: center; margin-bottom: 0.4rem; }
+  .masthead .emblem svg { width: 34px; height: 34px; overflow: visible; fill: none; stroke: var(--ink-soft); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .masthead h1 { font-family: var(--font-mincho); font-weight: 700; font-size: clamp(2.4rem, 7vw, 3.4rem); letter-spacing: 0.1em; margin: 0; }
+  .masthead .sub { font-size: 0.64rem; letter-spacing: 0.3em; color: var(--ink-soft); text-transform: uppercase; margin-top: 0.4em; }
+  .masthead .tagline { font-family: var(--font-mincho); font-size: 0.86rem; letter-spacing: 0.2em; color: var(--ink-soft); margin: 0.5em 0 0; }
+  .masthead .about-lede { font-size: 0.82rem; color: var(--ink-soft); line-height: 1.8; max-width: 520px; margin: 0.9em auto 0; }
+  .rule { border-top: 4px solid var(--rule); border-bottom: 1px solid var(--rule); height: 6px; margin: 0.9rem 0 1.8rem; }
+
+  .latest-callout { border: 2px solid var(--ink); margin-bottom: 1.8rem; transition: border-color 0.15s; }
+  .latest-callout:hover { border-color: var(--shu); }
+  .latest-link { display: block; text-decoration: none; color: inherit; padding: 1.4rem 1.5rem; }
+  .latest-badge { display: inline-block; background: var(--shu); color: #fff; font-size: 0.68rem; letter-spacing: 0.15em; padding: 0.25em 0.8em; margin-bottom: 0.7em; }
+  .latest-no { font-size: 0.72rem; color: var(--ink-soft); letter-spacing: 0.08em; }
+  .latest-date { font-family: var(--font-mincho); font-weight: 700; font-size: 1.4rem; margin: 0.2em 0 0.6em; }
+  .latest-top { font-size: 0.95rem; line-height: 1.8; margin-bottom: 0.9em; }
+  .latest-cta { font-size: 0.82rem; font-weight: 700; color: var(--link); }
+
+  .top-nav { list-style: none; margin: 0 0 2.2rem; padding: 0; font-size: 0.88rem; }
+  .top-nav li { border-bottom: 1px solid var(--rule-soft); }
+  .top-nav a { display: block; text-decoration: none; color: inherit; padding: 0.9em 0.1em; }
+  .top-nav a:hover { color: var(--link); }
+
+  h2 { font-family: var(--font-mincho); font-size: 1.05rem; border-bottom: 3px double var(--ink); padding-bottom: 0.3em; margin: 2.2rem 0 1.2rem; }
+  h2:first-of-type { margin-top: 0; }
+  .lede { font-size: 0.86rem; color: var(--ink-soft); line-height: 1.8; margin: -0.6rem 0 1.2rem; }
+  .editor-box { border: 1px solid var(--rule-soft); border-left: 3px solid var(--shu); padding: 1.1rem 1.3rem; margin-bottom: 2rem; font-size: 0.86rem; line-height: 1.8; }
+  .editor-box .editor-role { font-family: var(--font-mincho); font-weight: 700; font-size: 0.95rem; margin: 0 0 0.5em; }
+  .editor-box .editor-link { margin: 0.7em 0 0; font-size: 0.82rem; }
+  .editor-box .editor-link a { font-weight: 700; }
+  .subscribe-box { border: 1px solid var(--rule-soft); padding: 1.1rem 1.3rem; margin-bottom: 2rem; font-size: 0.86rem; line-height: 1.8; }
+  .subscribe-box .feed-url { font-family: monospace; font-size: 0.8rem; background: rgba(0,0,0,0.04); padding: 0.5em 0.7em; word-break: break-all; }
+  .subscribe-box .subscribe-links { display: flex; gap: 1.2em; flex-wrap: wrap; }
+  .subscribe-box .subscribe-links a { font-weight: 700; }
+  .subscribe-box .hint { font-size: 0.76rem; color: var(--ink-soft); }
+  footer { margin-top: 2rem; font-size: 0.72rem; color: var(--ink-soft); border-top: 1px solid var(--rule-soft); padding-top: 0.8em; }
+</style>
+
+<div class="wrap">
+  <div class="masthead">
+    <div class="emblem">
+      <svg viewBox="0 0 100 100">
+        <path d="M50,40 C40,32 26,30 16,32 L16,74 C26,72 40,74 50,82" />
+        <path d="M50,40 C60,32 74,30 84,32 L84,74 C74,72 60,74 50,82" />
+        <line x1="50" y1="40" x2="50" y2="82" />
+        <circle cx="50" cy="17" r="6" />
+        <line x1="50" y1="25" x2="50" y2="33" />
+      </svg>
+    </div>
+    <h1>生涯学習新聞</h1>
+    <p class="sub">SHOGAI GAKUSHU SHIMBUN</p>
+    <p class="tagline">学ぶ・つながる・生きる</p>
+    <p class="about-lede">生涯学習の政策・現場・統計を、業界紙の形式で届ける個人運営のデジタル新聞です。</p>
+  </div>
+  <div class="rule"></div>
+
+  <div class="latest-callout">
+    <a class="latest-link" href="issues/2026-08-05.html">
+      <span class="latest-badge">創刊号</span>
+      <div class="latest-no">創刊第1号</div>
+      <div class="latest-date">2026年8月5日（水）発行</div>
+      <div class="latest-top">社会教育の在り方、中教審の審議が大詰めへ／図書館は「読む」だけの場所ではなくなる／編集長コラム「創刊にあたって——学びは誰のものか」</div>
+      <span class="latest-cta">最新号を読む →</span>
+    </a>
+  </div>
+
+  <ul class="top-nav">
+    <li><a href="backnumbers.html">バックナンバー一覧 →</a></li>
+    <li><a href="archive.html">記事を横断検索する／編集長コラムの連載一覧を見る →</a></li>
+  </ul>
+
+  <h2>生涯学習新聞とは</h2>
+  <p class="lede">中央教育審議会などの政策動向に加えて、公民館・社会教育施設の現場、リカレント教育と学び直し、シニアの学び、図書館・博物館の制度と実践、各種の統計・調査など、幅広いテーマを特集・連載として発行ごとにお届けします。実在の刊行物ではなく、個人が試作しているデジタル新聞です。各号の内容は公開情報を編集部が要約・構成したものです。</p>
+  <div class="editor-box">
+    <p class="editor-role">発行人について</p>
+    <p>本紙は、<a href="https://www.jll.or.jp/" target="_blank" rel="noopener">一般財団法人日本生涯学習協議会</a>の理事長である山仲元が、個人として試作しているデジタル新聞です。協議会の公式刊行物ではなく、紙面に示された意見はすべて編集部・編集長個人のものであり、協議会の見解を代表するものではありません。</p>
+    <p class="editor-link"><a href="archive.html">編集長コラムの連載一覧を見る →</a></p>
+  </div>
+
+  <h2>新号のお知らせを受け取る</h2>
+  <div class="subscribe-box">
+    <p>新しい号が出るたびにお知らせを受け取りたい場合は、以下のRSSフィードのURLを、無料のメール通知サービスに登録してください。メールアドレスの登録・配信はすべてサービス側が行うため、こちらでは個人情報を一切お預かりしません。</p>
+    <p class="feed-url"><a href="feed.xml">https://djtobby.github.io/shogai-gakushu-shimbun/feed.xml</a></p>
+    <p class="subscribe-links">
+      <a href="https://blogtrottr.com/" target="_blank" rel="noopener">Blogtrottr で登録（おすすめ・簡単）→</a>
+      <a href="https://follow.it/" target="_blank" rel="noopener">Follow.it で登録 →</a>
+    </p>
+    <p class="hint">どちらも、上記フィードURLを貼り付けてメールアドレスを入力するだけで、新号公開時に自動でメールが届くようになります。RSSリーダー（Feedlyなど）でも同じURLを使って購読できます。</p>
+  </div>
+
+  <footer>本紙は個人が試作しているデジタル新聞です。新しい号を作成した際は、この最新号カードを差し替え、<a href="backnumbers.html">バックナンバー一覧</a>にもリンクを追加してください。</footer>
+</div>

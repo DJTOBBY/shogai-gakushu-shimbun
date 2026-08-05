@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>生涯学習新聞</title>
+    <link>https://djtobby.github.io/shogai-gakushu-shimbun/</link>
+    <description>生涯学習の政策・制度、公民館などの社会教育の現場、リカレント教育、シニアの学び、図書館・博物館の動向を届ける生涯学習新聞。</description>
+    <language>ja</language>
+    <atom:link href="https://djtobby.github.io/shogai-gakushu-shimbun/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>生涯学習新聞 2026年8月5日号（創刊第1号）</title>
+      <link>https://djtobby.github.io/shogai-gakushu-shimbun/issues/2026-08-05.html</link>
+      <guid isPermaLink="true">https://djtobby.github.io/shogai-gakushu-shimbun/issues/2026-08-05.html</guid>
+      <pubDate>Wed, 05 Aug 2026 07:00:00 +0900</pubDate>
+      <description><![CDATA[
+        【創刊号・一面トップ】中央教育審議会「社会教育の在り方に関する特別部会」の審議が大詰めへ（令和8年5月22日に審議事項2の意見整理を公表）。ほか、今週の特集は文科省報告書「図書館が拓く未来の学びと地域社会」が描く次の図書館像、博物館の「望ましい基準」全部改正とデジタルアーカイブ、通信制大学の在学者の約8割が社会人、夏休みの公民館で子ども向け講座が最盛期、編集長コラム「創刊にあたって——学びは誰のものか」など、全12面でお届けします。
+      ]]></description>
+    </item>
+  </channel>
+</rss>
