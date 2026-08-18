@@ -759,6 +759,69 @@
 
   /* ---- chief-editor column generator ---- */
 
+  /* ================================================================
+     印刷用スタイル（@media print）
+
+     画面上ではタブで1面ずつ切り替えて表示しているため、そのまま
+     印刷すると1面しか出力されない。印刷時は hidden を解除して
+     全12面を順に出し、1面ごとに改ページする。
+
+     ・ダークモード時でも紙は白・文字は黒で出力する
+     ・ツールバー／広告枠／「続きを読む」ボタン／ダイアログは出さない
+     ・画面用の紙テクスチャ・影・枠線は落とす
+     ・A4縦。面ごとの版面比（aspect-ratio）は解除し、本文を自然に流す
+     ================================================================ */
+  @media print {
+    @page { size: A4 portrait; margin: 14mm 12mm; }
+
+    /* ダークモードの配色を打ち消し、印刷用の白地・黒文字に固定する */
+    :root, :root[data-theme="dark"], :root[data-theme="light"] {
+      --paper: #ffffff; --ink: #000000; --ink-soft: #333333;
+      --rule: #000000; --rule-soft: #888888; --shu: #000000;
+      --link: #000000; --shadow: transparent;
+    }
+
+    html, body { background: #fff !important; color: #000 !important; }
+
+    /* 画面用の装飾を落とす */
+    .paper {
+      max-width: none; margin: 0; border: 0;
+      background-image: none !important; background-color: #fff !important;
+      box-shadow: none !important;
+    }
+
+    /* 全12面を出力し、面ごとに改ページ */
+    .page, .page[hidden] { display: block !important; }
+    .page {
+      aspect-ratio: auto !important;
+      padding: 0 0 0.6rem;
+      break-after: page; page-break-after: always;
+      break-inside: auto;
+    }
+    .page:last-of-type { break-after: auto; page-break-after: auto; }
+
+    /* 画面専用の要素は印刷しない */
+    .no-print, .toolbar, .ad-slot, .read-more, .read-more-btn,
+    .ad-share, dialog, .article-dialog { display: none !important; }
+
+    /* 見出し・囲みが途中で切れないように */
+    h2, h3, h4, .section-heading, .col-title, .col-sec { break-after: avoid; page-break-after: avoid; }
+    .story, .op-box, .why-matters, .mini-box, .back-box,
+    .column-box, .editors-note, tr, li { break-inside: avoid; page-break-inside: avoid; }
+
+    /* リンクは黒字のまま（URLは併記しない：出典は本文に明記済み） */
+    a { color: #000 !important; text-decoration: none; }
+
+    /* 罫・囲みを印刷で確実に出す */
+    .rule-thick-thin, .headline-band, .index-line, .running-header,
+    .event-table th, .event-table td { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .type-badge, .hb-badge, .cc-badge { border-color: #000 !important; color: #000 !important; background: transparent !important; }
+
+    /* 本文の級数を紙面向けに少し詰める */
+    .body p, .col-excerpt p { font-size: 9.5pt; line-height: 1.75; }
+    .op-box.full .col-excerpt { column-gap: 10mm; }
+  }
+
   @media (max-width: 720px) {
     .op-row, .opinion-grid, .news-grid { grid-template-columns: 1fr; }
     .news-grid .lead-col { border-right: none; padding-right: 0; border-bottom: 1px solid var(--rule-soft); padding-bottom: 1.2rem; margin-bottom: 0.4rem; }
