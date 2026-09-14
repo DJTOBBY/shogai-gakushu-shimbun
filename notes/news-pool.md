@@ -30,13 +30,38 @@
 
 ---
 
+## 2026-09-14発見（第5号取材時）
+
+- **[海外・国際機関]** ユネスコ閣僚声明、9月8〜11日に**採択済み**
+  - 概要: 名称は "Ministerial statement on sustaining education as a common good in the age of AI"。25人超の教育大臣が採択。「education as a common good and a human right」と併記。教師について "Teachers should use AI to support, not replace, their professional contribution and judgement."。あわせて政策ブリーフ集（AI安全ガバナンス・主権・調達・費用モデル・年齢適切性）と、ユネスコ・チェア年次調査（高等教育のAI動向）を公表。
+  - 出典: [UNESCO 閣僚声明の発表](https://www.unesco.org/en/articles/education-age-ai-ministerial-statement-be-adopted-unescos-digital-learning-week)
+  - 想定面: 1面・5面・10面
+  - 状態: 使用済み（2026-09-14号）／**声明の全文・政策ブリーフ本文・チェア調査の詳細は未確認。次号で追う**
+
+- **[海外・国際機関]** 国際識字デー世界式典、開催地は**メキシコ・チアパス州**（確認済み）
+  - 概要: 9月8〜9日。制定60周年。ユネスコ国際識字賞は**6件**の取り組みを表彰。第2号のネタ帳で「チアパス州は未確認」としていた点が確認できた。
+  - 出典: [UNESCO](https://www.unesco.org/en/days/literacy) ／ [Language Magazine](https://languagemagazine.com/2026/09/08/mexico-hosts-international-literacy-day/)
+  - 想定面: 8面
+  - 状態: 使用済み（2026-09-14号）／**受賞プログラム名と国は未確認。次号で追う**
+
+- **[政策・行政]** 9月5〜14日の文科省報道発表に生涯学習・社会教育の新規案件なし
+  - 概要: 南極観測隊（9/11）、産業競争力・研究力中核大学群WG（9/10）、国立大学法人評価委員会（9/8）など。中教審特別部会の取りまとめは9月14日時点でも未公表。
+  - 出典: [文部科学省 令和8年度報道発表](https://www.mext.go.jp/b_menu/houdou/2026/index.html)
+  - 想定面: 3面短信
+  - 状態: 使用済み（2026-09-14号）／**継続監視**
+
+- **[編集メモ]** 連載が3本体制に
+  - 概要: 第5号から「理事長コラム『認定のその先へ』」（2面）と「世界の学びを読む」（10面）が開始。編集長コラム「学びの周辺」（2面）とあわせて3連載。コラム「学びの現在地」は第5号を休載、次号から再開予定。
+  - 想定面: 2面・10面
+  - 状態: 記録のみ
+
 ## 2026-09-04発見（第4号取材時）
 
 - **[海外・国際機関]** ユネスコ「デジタル・ラーニング・ウィーク2026」9月8〜11日パリ
   - 概要: テーマは "Education in the age of AI: Facts | Frictions | Frontiers"。25人超の教育大臣が参加、パリ会場に1,000人以上。**AI時代に教育を「共通財（common good）」として維持する閣僚共同声明を採択予定**。論点にAI・デジタル主権と並んで「アナログな手法」「地域主導の取り組み」が明記されている。
   - 出典: [UNESCO Digital Learning Week](https://www.unesco.org/en/weeks/digital-learning) ／ [閣僚声明の発表](https://www.unesco.org/en/articles/education-age-ai-ministerial-statement-be-adopted-unescos-digital-learning-week)
   - 想定面: 1面・2面論説・9面
-  - 状態: 使用済み（2026-09-04号）／**閣僚声明の全文は未公表。会期後に続報**
+  - 状態: 使用済み（2026-09-04号=予告／2026-09-14号=**採択を確認して詳報**。声明名は "Ministerial statement on sustaining education as a common good in the age of AI"。全文と政策ブリーフ集の本文は依然未確認）
 
 - **[政策・行政]** 通信教育の適正な実施・運営の確保のための基本的な指針等に関する検討会議
   - 概要: 第1回は令和8年8月31日13〜15時。対象は**高等学校の通信教育**。「高等学校の定時制教育及び通信教育振興法の一部を改正する法律」を受けた検討。議題は座長選任、公開規則制定、法律改正の背景・概要、検討課題、自由討議。参考資料にガイドライン・認可基準・実態調査結果。
@@ -173,7 +198,7 @@
   - 概要: 自治体・地域補助が30年で実質3分の2減。日本の一般財源化と構造が同型。困窮地区では逆に伸びているという所見あり。
   - 出典: `notes/kaigai-europe.md`
   - 想定面: 特集
-  - 状態: 一部使用（2026-09-04号 3面の短信「海外拾い読み」／**次号で詳報を検討**）
+  - 状態: 使用済み（2026-09-14号・4面で詳報＋論説／**スウェーデン側の一次資料は未到達**）
 
 - **[海外・北米]** 米国 IMLS存続と2027年度ゼロ要求
   - 概要: 2026会計年度歳出法でLSTAは2億1,250万ドル。大統領令による解体を議会が拒否。一方2027年度予算教書（4月3日）は成人教育を0ドル要求。
